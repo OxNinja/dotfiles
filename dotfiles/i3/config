@@ -1,0 +1,138 @@
+# set modifier
+set $super Mod4
+set $alt Mod1
+
+# set font
+font pango: Noto Sans 6
+
+# Use Mouse+$super to drag floating windows to their wanted position
+floating_modifier $super
+
+#autostart
+exec --no-startup-id dunst
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wall.png
+exec_always --no-startup-id xrandr --output HDMI-0 --primary --rate 144 --mode 1920x1080 --right-of DP-2
+exec_always --no-startup-id ~/.config/polybar/launch.sh --shades
+exec --no-startup-id compton
+
+# start a terminal
+bindsym $super+Return exec i3-sensible-terminal
+
+bindsym $super+d exec ~/.config/rofi/launchers/ribbon/launcher.sh
+bindsym $super+e exec ~/.config/rofi/powermenu/powermenu.sh
+bindsym $super+$alt+l exec betterlockscreen -l blur
+
+# common apps keybinds
+bindsym Print exec flameshot gui
+
+#change volume
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
+bindsym XF86AudioMute exec amixer set Master toggle
+
+# music control
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioStop exec mpc stop
+
+# kill focused window
+bindsym $super+Shift+q kill
+
+# change focus
+bindsym $super+h focus left
+bindsym $super+j focus down
+bindsym $super+k focus up
+bindsym $super+l focus right
+
+# move focused window
+bindsym $super+Shift+h move left
+bindsym $super+Shift+j move down
+bindsym $super+Shift+k move up
+bindsym $super+Shift+l move right
+
+# split in horizontal orientation
+bindsym $super+w split h
+
+# split in vertical orientation
+bindsym $super+q split v
+
+# enter fullscreen mode for the focused container
+bindsym $super+f fullscreen toggle
+
+# change container layout split
+bindsym $super+s layout toggle split
+
+# toggle tiling / floating
+bindsym $super+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $super+Shift+space focus mode_toggle
+
+# workspaces name
+set $ws1 "1:1"
+set $ws2 "2:2"
+set $ws3 "3:3"
+set $ws4 "4:4"
+set $ws5 "5:5"
+set $ws6 "6:6"
+set $ws7 "7:7"
+set $ws8 "8:8"
+set $ws9 "9:9"
+set $ws0 "10:10"
+
+# switch to workspace
+bindsym $alt+Control+l workspace next
+bindsym $alt+Control+h workspace prev
+bindsym $super+1 workspace $ws1
+bindsym $super+2 workspace $ws2
+bindsym $super+3 workspace $ws3
+bindsym $super+4 workspace $ws4
+bindsym $super+5 workspace $ws5
+bindsym $super+6 workspace $ws6
+bindsym $super+7 workspace $ws7
+bindsym $super+8 workspace $ws8
+bindsym $super+9 workspace $ws9
+bindsym $super+0 workspace $ws0
+
+# move focused container to workspace
+bindsym $super+Shift+1 move container to workspace $ws1
+bindsym $super+Shift+2 move container to workspace $ws2
+bindsym $super+Shift+3 move container to workspace $ws3
+bindsym $super+Shift+4 move container to workspace $ws4
+bindsym $super+Shift+5 move container to workspace $ws5
+bindsym $super+Shift+6 move container to workspace $ws6
+bindsym $super+Shift+7 move container to workspace $ws7
+bindsym $super+Shift+8 move container to workspace $ws8
+bindsym $super+Shift+9 move container to workspace $ws9
+bindsym $super+Shift+0 move container to workspace $ws0
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $super+Shift+r restart
+
+# exit i3
+#bindsym $super+q exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
+        bindsym Return mode "default"
+}
+bindsym $super+r mode "resize"
+
+
+# window rules, you can find the window class using xprop
+for_window [class=".*"] border pixel 2
+for_window [class=feh] floating enable
+
+# colour of border, background, text, indicator, and child_border
+client.focused              #3b4252 #2f343f #3b4252 #81a1c1 #2f343f
+client.focused_inactive     #2f343f #2f343f #3b4252 #2f343f #2f343f
+client.unfocused            #2f343f #2f343f #3b4252 #2f343f #2f343f
+client.urgent               #2f343f #2f343f #3b4252 #2f343f #2f343f
+client.placeholder          #2f343f #2f343f #3b4252 #2f343f #2f343f
+client.background           #2f343f
+
