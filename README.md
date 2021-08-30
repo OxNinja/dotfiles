@@ -13,6 +13,14 @@ My current dotfiles, will try to update if I change my theme
 </details>
 
 <details>
+<summary>Rofi</summary>
+
+![Launcher](images/rofi_launcher.png)
+![Power menu](images/rofi_power.png)
+
+</details>
+
+<details>
 <summary>Colors</summary>
 
 ![Scheme](images/scheme.png)
@@ -23,6 +31,14 @@ My current dotfiles, will try to update if I change my theme
 <summary>nvim</summary>
 
 ![Nvim](images/nvim.png)
+
+</details>
+
+<details>
+<summary>Other</summary>
+
+![Dunst](images/dunst.png)
+![Fetch](images/fetch.png)
 
 </details>
 
