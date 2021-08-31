@@ -37,6 +37,7 @@ My current dotfiles, will try to update if I change my theme
 <details>
 <summary>Other</summary>
 
+![Startpage](images/start.png)
 ![Dunst](images/dunst.png)
 ![Fetch](images/fetch.png)
 
