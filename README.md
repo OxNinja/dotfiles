@@ -37,9 +37,38 @@ My current dotfiles, will try to update if I change my theme
 <details>
 <summary>Other</summary>
 
+Firefox [NightTab](https://github.com/zombieFox/nightTab)
+
 ![Startpage](images/start.png)
+
+Dunst notifier
+
 ![Dunst](images/dunst.png)
+
 ![Fetch](images/fetch.png)
+
+</details>
+
+## Packages & tweaks
+
+<details>
+<summary>zsh</summary>
+
+I use the [spaceship prompt](https://github.com/spaceship-prompt/spaceship-prompt). Vanilla.
+
+</details>
+
+<details>
+<summary>tmux</summary>
+
+[.tmux](https://github.com/gpakosz/.tmux) with some color changes and refined for more simplicity.
+
+</details>
+
+<details>
+<summary>Rofi</summary>
+
+I use this [rofi collection](https://github.com/adi1090x/rofi) (launcher style 1, powermenu style fullscreen) with a custom `theme.rasi`.
 
 </details>
 
