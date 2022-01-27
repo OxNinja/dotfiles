@@ -8,7 +8,14 @@ My current dotfiles, will try to update if I change my theme
 <summary>Home and bar</summary>
 
 ![Home](images/home.png)
+
+Polybar forest, with gruvbox theme
+
 ![Bar](images/bar.png)
+
+Alacritty + tmux:
+
+![Term](images/tmux.png)
 
 </details>
 
