@@ -21,8 +21,17 @@ function mkcd() {
   cd "$1"
 }
 
+function notify() {
+  notify-send -u "${1:-low}" "${2:-Task finished}" "${3:-Success}"
+}
+
+function commit() {
+  lucky_commit "${1:-deadbeef}"
+}
+
+alias ls='ls --color=auto'
 alias reload='source ~/.zshrc'
-alias t='tmux a -t s1 || tmux new-session -t s1'
+alias t='tmux a -t s1 || tmux new-session -t s1 && notify "normal" "Tmux new session" "You hsould load the previous session with <prefix> + C^r"'
 alias c='xclip -sel clip'
 alias rc='vim ~/.zshrc'
 alias config='vim ~/.config/i3/config'
