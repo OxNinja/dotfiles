@@ -65,6 +65,15 @@ I use the [starship prompt](https://starship.rs/).
 
 </details>
 
+<details>
+<summary>tmux config</summary>
+
+See my [tmux config](dotfiles/.tmux.conf) for more details.
+
+I use [tmux resurrect](https://github.com/tmux-plugins/tmux-resurrect) in order to save my tmux sessions over reboot, or server kill.
+
+</details>
+
 
 ## Install
 
