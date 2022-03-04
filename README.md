@@ -9,9 +9,9 @@ My current dotfiles, will try to update if I change my theme
 
 ![Home](images/home.png)
 
-Polybar forest, with gruvbox theme
+Polybar material, with gruvbox theme
 
-![Bar](images/bar.png)
+![Bar](images/polybar.png)
 
 Alacritty + tmux:
 
