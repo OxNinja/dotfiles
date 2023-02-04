@@ -1,5 +1,11 @@
 # bspwm + Tokyo night
 
+## Setup
+
+* Terminator
+* Rofi
+* Zsh with starship prompt
+
 ## Overview
 
 ![Desktop](static/desk.png)
