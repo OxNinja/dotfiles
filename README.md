@@ -1,7 +1,11 @@
-# 0xNinja's dotfiles
+# bspwm + Tokyo night
 
-## Rices
+## Overview
 
-* [i3-gruvbox](https://github.com/OxNinja/dotfiles/tree/arch/i3-gruvbox)
-* [i3-htb](https://github.com/OxNinja/dotfiles/tree/arch/i3-htb)
-* [i3-nord](https://github.com/OxNinja/dotfiles/tree/arch/i3-nord)
+![Desktop](static/desk.png)
+![Rofi menu](static/rofi.png)
+![Power menu](static/power.png)
+
+## Comments
+
+I need to setup my double screen config and tweak some style/GTK but for now it is good.
